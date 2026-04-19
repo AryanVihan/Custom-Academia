@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { Subject, MarkComponent } from "@/types";
 import { X, Plus, Trash2 } from "lucide-react";
 
@@ -38,7 +39,7 @@ export default function EditModal({ subject, onSave, onClose }: Props) {
     onSave({ ...subject, conducted, absent: absentClamped, components });
   }
 
-  return (
+  return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ background: "rgba(0,0,0,0.8)", backdropFilter: "blur(4px)" }}>
       <div
         className="w-full max-w-md max-h-[90vh] overflow-y-auto rounded-2xl border border-violet-800/40 animate-scale-in"
@@ -164,6 +165,7 @@ export default function EditModal({ subject, onSave, onClose }: Props) {
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
