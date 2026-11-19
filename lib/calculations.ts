@@ -13,7 +13,7 @@ export function getGrade(pct: number): { grade: string; gradePoints: number } {
 export function processSubject(subject: Subject): ProcessedSubject {
   const present = subject.conducted - subject.absent;
   const attendancePct =
-    subject.conducted > 0 ? (present / subject.conducted) * 100 : 0;
+    subject.conducted > 0 ? (present / subject.conducted) * 100 : 100;
   const attendanceStatus = attendancePct >= 75 ? "safe" : "danger";
 
   let margin: number | undefined;
