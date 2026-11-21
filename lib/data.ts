@@ -20,7 +20,8 @@ function subject(
 }
 
 const user1Subjects: Subject[] = [
-  subject("21CSE465T", "Cloud Application Development", 60, 40.2, 50),
+  subject("21GNH401TA", "Behavioral Psychology", 100, 95.56, 100),
+  subject("21CSE465T", "Cloud Application Development", 60, 50.2, 60),
   subject("21CSE461T", "Cloud Security", 60, 50.5, 60),
   subject("21CSE463T", "Cloud Strategy Planning and Management", 60, 49.55, 60),
   subject("21MGO108T", "Consumer Behaviour (Open Elective)", 60, 49.5, 60),
@@ -28,10 +29,11 @@ const user1Subjects: Subject[] = [
 ];
 
 const user2Subjects: Subject[] = [
-  subject("21CSE465T", "Cloud Application Development", 60, 38.8, 50),
+  subject("21GNH401TA", "Behavioral Psychology", 100, 91.91, 100),
+  subject("21CSE465T", "Cloud Application Development", 60, 48.8, 60),
   subject("21CSE461T", "Cloud Security", 60, 48.6, 60),
   subject("21CSE463T", "Cloud Strategy Planning and Management", 60, 51.1, 60),
-  subject("21NTO406T", "Industrial Nanotechnology (Open Elective)", 60, 39.5, 50),
+  subject("21NTO406T", "Industrial Nanotechnology (Open Elective)", 60, 49.5, 60),
   subject("21IPE333P", "Essentials in Cloud and DevOps", 100, 78, 100),
 ];
 
